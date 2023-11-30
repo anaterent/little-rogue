@@ -2,37 +2,150 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  background-color: #ececec;
+  overflow-x: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 44px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h2 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 38px;
+}
+p {
+  margin: 0 10px;
+}
+
+iframe {
+  border: none;
+}
+
+.top-margin {
+  margin-top: 30px;
+}
+
+.side-margin {
+  margin: 0 30px;
+}
+
+.top-level {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  max-width: 100%; /* Adjust as needed */
+  background-color: #ececec;
+  font-size: 16px;
+  height: 100%;
+  align-items: stretch;
+  line-height: 2em;
+}
+
+.header-panel {
+  text-align: center; /* Centers your logo and title */
+  margin-bottom: 50px; /* Space below the header */
+  position: fixed;
+  width: 450px;
+  height: 100%;
+}
+
+.logo {
+  max-width: 120px;
+  max-height: 100%;
+  margin: 40px;
+}
+
+.header-panel .title {
+  padding: 3%;
+}
+
+.navbar {
+  padding: 0 4%;
+  flex-direction: column;
+}
+
+.nav-btn {
+  padding: 1% 2%;
+  color: rgb(36, 35, 33);
+}
+.nav-btn:hover {
+  color: grey;
+  text-decoration: none;
+}
+
+.matcha-icon {
+  max-width: 50%;
+  margin-top: 20vh;
+}
+
+.right-panel {
+  display: flex;
+  left: 500px;
+  position: relative;
+  min-height: calc(100vh - 40px); /* minus 40 to account for margin*/
+  margin: 40px 40px 0 40px;
+}
+
+.contentNfooter {
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+.content {
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.body {
+  padding: 6%;
+  background-color: #c8e0ac;
+  display: flex;
+  flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.horizontal-flex {
+  display: flex;
+}
+
+.sm-icon {
+  margin:  9px;
+}
+
+.sm-icon :hover {
+  color: black;
+}
+
+.footer {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  /* margin-top: auto; */
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+.image-board {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  flex-direction: column;
+  margin: 100px 40px 0 40px;
+}
+
+.images-in-board img {
+  max-width: 500px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+
 }
