@@ -1,0 +1,128 @@
+$blackColour: rgb(36, 35, 33)
+$whiteColour: #ececec
+@mixin flex-column
+  display: flex
+  flex-direction: column
+
+.App
+  text-align: center
+
+html
+  background-color: $whiteColour
+  overflow-x: hidden
+
+h1
+  letter-spacing: 1px
+  text-transform: uppercase
+  margin-top: 0
+  margin-bottom: 10px
+  font-size: 18px
+  font-weight: 700
+  line-height: 44px
+
+h2
+  font-size: 16px
+  font-weight: 600
+  line-height: 38px
+
+p
+  margin: 0 10px
+
+iframe
+  border: none
+
+.top-margin
+  margin-top: 30px
+
+.side-margin
+  margin: 0 30px
+
+.top-level
+  display: flex
+  font-family: "Poppins", sans-serif
+  max-width: 100% // Adjust as needed
+  background-color: $whiteColour
+  font-size: 16px
+  height: 100%
+  align-items: stretch
+  line-height: 2em
+
+.header-panel
+  text-align: center // Centers your logo and title
+  margin-bottom: 50px // Space below the header
+  position: fixed
+  width: 450px
+  height: 100%
+
+  .logo
+    max-width: 120px
+    max-height: 100%
+    margin: 40px
+
+  .title
+    padding: 3%
+
+  .navbar
+    padding: 0 4%
+    flex-direction: column
+
+    .nav-btn
+      padding: 1% 2%
+      color: $blackColour
+
+      &:hover
+        color: grey
+        text-decoration: none
+
+.matcha-icon
+  max-width: 50%
+  margin-top: 20vh
+
+.right-panel
+  display: flex
+  left: 500px
+  position: relative
+  min-height: calc(100vh - 40px) // minus 40 to account for margin
+  margin: 40px 40px 0 40px
+
+  .contentNfooter
+    @include flex-column
+
+    .content
+      width: 700px
+      @include flex-column
+      flex: 1
+      justify-content: center
+
+      .body
+        padding: 6%
+        background-color: #c8e0ac
+        @include flex-column
+
+      .horizontal-flex
+        display: flex
+
+        .sm-icon
+          margin: 7px
+
+          &:hover
+            color: $blackColour
+
+    .footer
+      width: 100%
+      justify-content: center
+      display: flex
+      margin-top: 40px
+      font-size: 14px
+
+.image-board
+  @include flex-column
+  flex-wrap: wrap
+  align-content: center
+  margin: 100px 40px 0 40px
+
+  .images-in-board
+    img
+      @include flex-column
+      max-width: 500px
+      margin: 10px
